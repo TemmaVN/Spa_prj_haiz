@@ -64,6 +64,12 @@
     <Compile Include="Nguyên\QuanLi.Designer.cs">
       <DependentUpon>QuanLi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Nguyên\Quản lí\KhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Nguyên\Quản lí\KhachHang.Designer.cs">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Bằng\Form1.resx">
@@ -74,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Nguyên\QuanLi.resx">
       <DependentUpon>QuanLi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nguyên\Quản lí\KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -97,8 +106,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Nguyên\Khách hàng\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

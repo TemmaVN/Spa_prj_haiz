@@ -37,8 +37,9 @@
             this.KhoTool = new System.Windows.Forms.ToolStripMenuItem();
             this.TaiChinhTool = new System.Windows.Forms.ToolStripMenuItem();
             this.BaoCaoTool = new System.Windows.Forms.ToolStripMenuItem();
-            this.CaiDattool = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.CaiDattool = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,7 +75,7 @@
             // 
             this.LHTool.Image = ((System.Drawing.Image)(resources.GetObject("LHTool.Image")));
             this.LHTool.Name = "LHTool";
-            this.LHTool.Size = new System.Drawing.Size(94, 27);
+            this.LHTool.Size = new System.Drawing.Size(94, 23);
             this.LHTool.Text = "Lịch hẹn";
             this.LHTool.Click += new System.EventHandler(this.lịchHẹnToolStripMenuItem_Click);
             // 
@@ -82,21 +83,21 @@
             // 
             this.DVTool.Image = ((System.Drawing.Image)(resources.GetObject("DVTool.Image")));
             this.DVTool.Name = "DVTool";
-            this.DVTool.Size = new System.Drawing.Size(88, 27);
+            this.DVTool.Size = new System.Drawing.Size(88, 23);
             this.DVTool.Text = "Dịch vụ";
             // 
             // NVTool
             // 
             this.NVTool.Image = ((System.Drawing.Image)(resources.GetObject("NVTool.Image")));
             this.NVTool.Name = "NVTool";
-            this.NVTool.Size = new System.Drawing.Size(105, 27);
+            this.NVTool.Size = new System.Drawing.Size(105, 23);
             this.NVTool.Text = "Nhân viên";
             // 
             // KhoTool
             // 
             this.KhoTool.Image = ((System.Drawing.Image)(resources.GetObject("KhoTool.Image")));
             this.KhoTool.Name = "KhoTool";
-            this.KhoTool.Size = new System.Drawing.Size(129, 27);
+            this.KhoTool.Size = new System.Drawing.Size(129, 23);
             this.KhoTool.Text = "Kho và vật tư";
             // 
             // TaiChinhTool
@@ -113,16 +114,6 @@
             this.BaoCaoTool.Size = new System.Drawing.Size(157, 23);
             this.BaoCaoTool.Text = "Báo cáo, thống kê";
             // 
-            // CaiDattool
-            // 
-            this.CaiDattool.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.CaiDattool.Enabled = false;
-            this.CaiDattool.Image = ((System.Drawing.Image)(resources.GetObject("CaiDattool.Image")));
-            this.CaiDattool.Name = "CaiDattool";
-            this.CaiDattool.Size = new System.Drawing.Size(85, 23);
-            this.CaiDattool.Text = "Cài đặt";
-            this.CaiDattool.Click += new System.EventHandler(this.cToolStripMenuItem_Click);
-            // 
             // toolStripComboBox1
             // 
             this.toolStripComboBox1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -133,11 +124,29 @@
             this.toolStripComboBox1.Text = "Tài khoản";
             this.toolStripComboBox1.Click += new System.EventHandler(this.toolStripComboBox1_Click);
             // 
+            // CaiDattool
+            // 
+            this.CaiDattool.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.CaiDattool.Enabled = false;
+            this.CaiDattool.Image = ((System.Drawing.Image)(resources.GetObject("CaiDattool.Image")));
+            this.CaiDattool.Name = "CaiDattool";
+            this.CaiDattool.Size = new System.Drawing.Size(85, 23);
+            this.CaiDattool.Text = "Cài đặt";
+            this.CaiDattool.Click += new System.EventHandler(this.cToolStripMenuItem_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(0, 30);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1264, 651);
+            this.panel1.TabIndex = 1;
+            // 
             // QuanLi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
@@ -164,5 +173,6 @@
         private System.Windows.Forms.ToolStripMenuItem BaoCaoTool;
         private System.Windows.Forms.ToolStripMenuItem CaiDattool;
         private System.Windows.Forms.ToolStripMenuItem toolStripComboBox1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
